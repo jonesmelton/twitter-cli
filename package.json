@@ -1,0 +1,23 @@
+{
+  "name": "twitter-cli",
+  "version": "1.0.0",
+  "description": "A simple interface to the Twitter REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shavah/twitter-cli.git"
+  },
+  "author": "Jones Melton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shavah/twitter-cli/issues"
+  },
+  "homepage": "https://github.com/shavah/twitter-cli#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
