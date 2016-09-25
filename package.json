@@ -18,6 +18,7 @@
   "homepage": "https://github.com/shavah/twitter-cli#readme",
   "dependencies": {
     "chai": "^3.5.0",
+    "envs": "^0.1.6",
     "mocha": "^3.0.2"
   }
 }
