@@ -17,8 +17,14 @@
   },
   "homepage": "https://github.com/shavah/twitter-cli#readme",
   "dependencies": {
+    "babel-preset-es2016": "^6.11.3",
     "chai": "^3.5.0",
-    "envs": "^0.1.6",
+    "dotenv": "^2.0.0",
     "mocha": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }
