@@ -57,7 +57,7 @@ const input = process.argv.slice(3, process.argv.length).join(' ')
 // takes command from the user and performs the appropriate action
 switch(command) {
   case undefined: 
-    console.log("Give a command: tweet, search, user, or retweets")
+    console.log("Give a command: tweet, search, user, retweets, followers, or following")
     break;
   case "tweet":
     tweet(input)
