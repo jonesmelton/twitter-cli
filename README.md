@@ -22,8 +22,8 @@
 
   1. Enter folder where you put the program and run ```npm test``` to verify that your API keys are loaded. You should see "1 Passing" in green. If not, your keys aren't in the right file or don't have the right syntax or naming convention.
   2. Run ```node index.js <command> <arguments>```
-      * For example ```node index.js tweet clams are great``` will post that sentence to your public timeline, right now.
-      * ```node index.js search dat boi``` will search for all public tweets containing the phrase "dat boi". It's limited to 100, and the API has a hard limit of 200 returns from a search.
+      * For example ```node index.js tweet clams are great``` will post "clams are great" to your public timeline, right now.
+      * ```node index.js search dat boi``` will search for all public tweets containing the phrase "dat boi". I set it to return 100 tweets for now. You can set it to whatever but the API has a hard limit of 200 returns from a search.
       * ```node index.js user drake``` will return the public timeline of @drake.
       * ```node index.js followers``` will return all your followers. Likewise following and retweets will return your own, so there's no need for the second argument.
 
