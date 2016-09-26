@@ -9,8 +9,9 @@ const T = new Twit({
   access_token_secret: process.env.TOKEN_SECRET,
 });
 
-function tweet(content) {
+function doTweet(content) {
   T.post('statuses/update', { status: content }, (err, data, response) => {
+    // just printing the results here but you could set it a variable or return it
     console.log(data)
   })
 }
@@ -27,4 +28,25 @@ function userTweets(username) {
   })
 }
 
-userTweets(process.argv[2])
+// grab the argument passed in to the program
+const command = process.argv[2]
+
+// grab the rest of the user input and turn it into a string
+const input = process.argv.slice(3, process.argv.length).join(' ')
+
+
+switch(command) {
+  case undefined: 
+    console.log("input a thing")
+    break;
+  case "tweet":
+    doTweet(input)
+    break;
+  case "search":
+    searchTweets(input)
+    break;
+  case "user":
+    userTweets(input)
+    break;
+}
+
