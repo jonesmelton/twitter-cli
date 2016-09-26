@@ -30,6 +30,7 @@
 
 # Info
 
+  * All functions return raw JSON, which has a lot of information in it.
   * I'm using ES6 notation for anonymous functions, which will look weird if you're not used to it. Instead of ```function(foo) { return foo }``` we can just write ```(foo) => { return foo }```
   * The Twit wrapper is pretty straightforward. If you want to add new functions you can use mine as examples and just reference the Twitter API docs for the REST route and what params to pass in via the options object.
   * I have one test that checks that API keys are loaded from the .env file. It only tests that SOMETHING was loaded for each key, it does not check that the keys are actually valid.
