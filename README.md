@@ -7,6 +7,7 @@
 # Setup
 
   1. Unzip the contents and enter the ```twitter-cli``` directory.
+  1. Open your terminal, navigate to the directory created by unzipping the .zip, and run ```npm install```
   2. Create a file called ```.env``` to hold your API keys. The file will be hidden, use ```ls -a``` to see all files.
   3. Add your API keys to ```.env``` they should be in the following format:
   ```
