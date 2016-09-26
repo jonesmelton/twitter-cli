@@ -1,9 +1,16 @@
 'use strict';
 require('dotenv').config();
+const Twit = require('twit');
 
-let chai = require('chai');
+const chai = require('chai');
 const expect = chai.expect;
 
+const T = new Twit({
+  consumer_key: process.env.CONSUMER_KEY,
+  consumer_secret: process.env.CONSUMER_SECRET,
+  access_token: process.env.ACCESS_TOKEN,
+  access_token_secret: process.env.TOKEN_SECRET,
+})
 
 describe("API keys", () => {
   it("has the keys loaded", () => {
